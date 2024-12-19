@@ -16,10 +16,12 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
 	font-size: 16px;
 	list-style: none;
 	text-decoration: none;
+    outline: none;
+    border: none;
 	font-weight: normal;
 }
 
-/* Global Styles */
+/* Global styles */
 :root {
     /* Colors */
     --main-color: #11011E;
@@ -36,6 +38,19 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
 
     --button-border-radius: 10px;
     --card-border-radius: 18px;
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Button */
+.button {
+    background-color: var(--primary-color);
+    color: var(--pure-white);
+    border-radius: var(--button-border-radius);
+    padding: 16px 24px;
 }
 
 /* Typography */
@@ -160,12 +175,4 @@ p, span {
     .grid-item-12 {
         grid-column: span 12;
     }
-}
-
-/* Button */
-.button {
-    background-color: var(--primary-color);
-    color: var(--pure-white);
-    border-radius: var(--button-border-radius);
-    padding: 16px 24px;
 }
