@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--pure-white);
+  background: radial-gradient(circle at center, #2D0059, #11011E 60%, #000000);
 }
 
 h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
     outline: none;
     border: none;
 	font-weight: normal;
+    color: var(--pure-white);
 }
 
 /* Global styles */
@@ -88,6 +89,7 @@ p, span {
 /* Grid */
 .grid {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr); 
     gap: 16px; 
 }
@@ -175,4 +177,17 @@ p, span {
     .grid-item-12 {
         grid-column: span 12;
     }
+}
+
+header {
+    .content {
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.logo {
+    color: red;
 }
