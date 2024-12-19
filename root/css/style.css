@@ -1,0 +1,79 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--pure-white);
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	list-style: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+/* Global Styles */
+:root {
+    /* Colors */
+    --main-color: #11011E;
+    --primary-color: #0FAE96;
+    --secondary-color: #511281;
+    --pure-black: #000000;
+    --pure-white: #FFFFFF;
+    --light-grey: #EAEAEA;
+    --grey: #C6C6C6;
+    --dark-grey: #808080;
+    --font-black-title: #2B2B2B;
+    --font-light-title: #ECF1F0;
+    --font-light-subtitle: #B6B6B6;
+
+    --button-border-radius: 10px;
+    --card-border-radius: 18px;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.36;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.33;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.22;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.22;
+}
+
+p, span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Button */
+.button {
+    background-color: var(--primary-color);
+    color: var(--pure-white);
+    border-radius: var(--button-border-radius);
+    padding: 16px 24px;
+}
