@@ -41,20 +41,17 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
     --button-border-radius: 10px;
     --card-border-radius: 18px;
     --cell-padding-x: 20px;
+    --cell-padding-y: 40px;
 }
 
 .content {
     max-width: 100%;
     margin: 0 auto;
+    padding: var(--cell-padding-y) var(--cell-padding-x);
 
     @media(min-width: 768px) {
         max-width: 1400px;
     }
-}
-
-.section {
-    padding-left: var(--cell-padding-x);
-    padding-right: var(--cell-padding-x);
 }
 
 /* Button */
@@ -71,9 +68,11 @@ h1 {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.36;
+    color: var(--font-light-title);
+    padding-bottom: 30px;
 
     @media(min-width: 768px) {
-        font-size: 72px;
+        font-size: 56px;
     }
 }
 
@@ -91,6 +90,7 @@ h3 {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.22;
+    color: var(--font-light-title);
 
     @media(min-width: 768px) {
         font-size: 36px;
@@ -265,5 +265,15 @@ header {
                 gap: 30px;
             }
         }
+    }
+}
+
+.main-screen {
+    p {
+        margin-bottom: 30px;
+    }
+
+    @media(min-width: 768px) {
+        text-align: center;
     }
 }
