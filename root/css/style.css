@@ -37,9 +37,12 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
     --font-black-title: #2B2B2B;
     --font-light-title: #ECF1F0;
     --font-regular: #B6B6B6;
+    --white-opacity-05: rgba(255, 255, 255, 0.05);
+    --dark-violet: #1D1429;
 
     --button-border-radius: 10px;
     --card-border-radius: 18px;
+    --label-border-radius: 4px;
     --cell-padding-x: 20px;
     --cell-padding-y: 40px;
 }
@@ -63,7 +66,6 @@ h1, h2, h3, h4, h5, h6, ul, li, span, div, p, a, button {
 }
 
 /* Typography */
-
 h1 {
     font-size: 32px;
     font-weight: 700;
@@ -98,12 +100,24 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.22;
 
     @media(min-width: 768px) {
         font-size: 28px;
+    }
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.22;
+    color: var(--font-light-title);
+    padding-bottom: 24px;
+
+    @media(min-width: 768px) {
+        font-size: 24px;
     }
 }
 
@@ -185,7 +199,6 @@ p, span {
     }
 }
 
-
 @media (min-width: 1200px) {
     .grid {
         grid-template-columns: repeat(12, 1fr); 
@@ -220,6 +233,7 @@ p, span {
     }
 }
 
+/* Header */
 header {
     padding: 30px var(--cell-padding-x);
 
@@ -268,6 +282,7 @@ header {
     }
 }
 
+/* Main screen */
 .main-screen {
     p {
         margin-bottom: 30px;
@@ -275,5 +290,44 @@ header {
 
     @media(min-width: 768px) {
         text-align: center;
+    }
+}
+
+/* Market trend */
+.market-trend {
+    .crypto-card {
+        background-color: var(--dark-violet);
+        border-radius: var(--card-border-radius);
+        padding: 20px;
+
+        .crypto-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            img {
+
+            }
+            span {
+
+            }
+            .crypto-label {
+                color: var(--dark-violet);
+                font-size: 10px;
+                padding: 4px 6px;
+                border-radius: var(--label-border-radius);
+                background-color: var(--grey);
+            }
+            .arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4px;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                background-color: var(--white-opacity-05);
+            }
+        }
     }
 }
