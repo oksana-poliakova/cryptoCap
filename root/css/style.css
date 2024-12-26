@@ -144,6 +144,19 @@ p, span {
     border-radius: var(--button-border-radius);
 }
 
+.card-container {
+    row-gap: 24px; 
+    column-gap: 24px;
+}
+
+.card {
+    background-color: var(--dark-violet);
+    border-radius: var(--card-border-radius);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 10px var(--card-shadow-border-color);
+}
+
 /* Grid */
 .grid {
     display: grid;
@@ -299,68 +312,87 @@ header {
 
 /* Market trend */
 .market-trend {
-    .grid {     
-        row-gap: 24px; 
-        column-gap: 24px;
+    .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 10px var(--card-shadow-border-color);
+        padding-bottom: 16px;    
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        span {
+
+        }
+        .card-label {
+            color: var(--dark-violet);
+            font-size: 10px;
+            padding: 4px 6px;
+            border-radius: var(--label-border-radius);
+            background-color: var(--grey);
+            text-transform: uppercase;
+        }
+        .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: var(--white-opacity-05);
+            margin-left: 26px;
+
+            img {
+                width: 25px;
+                padding: 4px;
+            }
+        }
     }
 
-    .crypto-card {
-        background-color: var(--dark-violet);
-        border-radius: var(--card-border-radius);
-        padding: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 4px 10px var(--card-shadow-border-color);
+    .card-stats {
+        h3 {
+            margin: 16px 0;
+        }
 
-        .crypto-card-header {
+        span {
+            color: var(--font-light-subtitle);
+        }
+    }
+}
+
+/* Features */
+.features {
+    p {
+        margin-bottom: 30px;
+    }
+
+    .card {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        h3 {
+            margin-top: 27px;
+        }
+
+        .card-footer {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 14px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 10px var(--card-shadow-border-color);
-            padding-bottom: 16px;    
-            
+
             img {
-                width: 50px;
-                height: 50px;
-            }
-            span {
-
-            }
-            .crypto-label {
-                color: var(--dark-violet);
-                font-size: 10px;
-                padding: 4px 6px;
-                border-radius: var(--label-border-radius);
-                background-color: var(--grey);
-                text-transform: uppercase;
-            }
-            .arrow {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 4px;
-                width: 34px;
-                height: 34px;
-                border-radius: 50%;
-                background-color: var(--white-opacity-05);
-                margin-left: 26px;
-
-                img {
-                    width: 25px;
-                    padding: 4px;
-                }
+                width: 12px;
+                margin-left: 4px;
             }
         }
+    }
 
-        .crypto-card-stats {
-            h3 {
-                margin: 16px 0;
-            }
+    @media(min-width: 1200px) {
 
-            span {
-                color: var(--font-light-subtitle);
-            }
-        }
     }
 }
