@@ -94,6 +94,7 @@ h3 {
     font-weight: 700;
     line-height: 1.22;
     color: var(--font-light-title);
+    padding-bottom: 30px;
 
     @media(min-width: 768px) {
         font-size: 36px;
